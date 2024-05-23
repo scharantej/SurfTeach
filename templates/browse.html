@@ -1,0 +1,14 @@
+
+<h1>Browse Results</h1>
+<ul>
+{% for result in results %}
+<li>{{ result }}</li>
+{% endfor %}
+</ul>
+<form action="/filter" method="GET">
+<label for="query">Filter by query:</label>
+<input type="text" name="query" placeholder="Enter your filter query">
+<input type="submit" value="Filter">
+</form>
+
+
